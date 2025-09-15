@@ -13,4 +13,4 @@
  * contains an unknown operator, or attempts division by zero.
  */
 
-double valuate_rpn(const std::string &expression);
+double evaluate_rpn(const std::string &expression);
