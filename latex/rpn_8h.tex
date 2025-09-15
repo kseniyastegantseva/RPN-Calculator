@@ -1,0 +1,52 @@
+\doxysection{include/rpn.h File Reference}
+\hypertarget{rpn_8h}{}\label{rpn_8h}\index{include/rpn.h@{include/rpn.h}}
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for rpn.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{rpn_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{rpn_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ double $>$ \mbox{\hyperlink{rpn_8h_ad2c611fc0925590d0db818b5571071e8}{evaluate\+\_\+rpn}} (const std\+::string \&expression)
+\begin{DoxyCompactList}\small\item\em Evaluates a mathematical expression in Reverse Polish Notation (RPN). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rpn_8h_ad2c611fc0925590d0db818b5571071e8}\label{rpn_8h_ad2c611fc0925590d0db818b5571071e8} 
+\index{rpn.h@{rpn.h}!evaluate\_rpn@{evaluate\_rpn}}
+\index{evaluate\_rpn@{evaluate\_rpn}!rpn.h@{rpn.h}}
+\doxysubsubsection{\texorpdfstring{evaluate\_rpn()}{evaluate\_rpn()}}
+{\footnotesize\ttfamily std\+::stack$<$ double $>$ evaluate\+\_\+rpn (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{expression }\end{DoxyParamCaption})}
+
+
+
+Evaluates a mathematical expression in Reverse Polish Notation (RPN). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & A string containing the RPN expression (e.\+g., "{}2 3 +"{}). Tokens must be separated by spaces. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stack The result of the evaluated expression. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Thrown if the expression is invalid, contains an unknown operator, or attempts division by zero. \\
+\hline
+\end{DoxyExceptions}
